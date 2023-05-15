@@ -9,19 +9,32 @@ import { ApiService } from '../api.service';
 export class NavbarComponent {
 
   emailData : String = "vanderhoote@gmail.com";
- 
+  data1:any=[]
+
+
   constructor(private api:ApiService){
+
+  if(this.emailData=="vanderhoote@gmail.com"){
     this.api.fetchloggeddetails(this.emailData).subscribe(
       (response)=>
       {
-        
-        
         this.data=response;
-       
-        
       }
     )
   }
+  else{
+    alert("invalid user");
+  }
+
+  this.api.fetchtasksetdetails().subscribe(
+    (response:any)=>{
+      this.data1=response.taskSetsList;
+      // console.log(response);
+    }
+  )
+  }
   data:any=[]
+
+  
 
 }

@@ -14,17 +14,19 @@ export class HeaderComponent {
  
   constructor(private api:ApiService){
 
+    if(this.emailData=="vanderhoote@gmail.com"){
     this.api.fetchloggeddetails(this.emailData).subscribe(
       (response)=>
       {
        
-        
         this.data=response;
-      
         return this.data;
         
         }
     )
 }
-
+else{
+  alert("invalid user");
+}
+}
 }

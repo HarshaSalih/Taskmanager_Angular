@@ -5,7 +5,7 @@
 
   <p>Last updated at : {{data.last_updated_at | date : 'dd MMM yyyy | hh:mm:ss'}}</p>
 
-  <!-- <div style="float: right;"> -->
+ 
     <form>
       <FONT COLOR="#0000FF"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
@@ -22,86 +22,29 @@
       <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
     </svg></FONT></button> -->
 
-      <!-- <input class="bg-dark" type="text" placeholder="All">
-    <button class="btn btn-secondary dropdown-toggle" ><FONT COLOR="#FBFCFC"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-    </svg></FONT></button> -->
-
-    <div class="btn-group">
-      <button class="btn btn-secondary dropdown-toggle allbtn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-        All
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Check glucose </a></li>
-        <li><a class="dropdown-item" href="#">Check ECG</a></li>
-        <li><a class="dropdown-item" href="#">Cardiac surgery</a></li>
-        <li><a class="dropdown-item" href="#">Check vitals</a></li>
-        <li><a class="dropdown-item" href="#">Liver Transplant</a></li>
-      </ul>
-    </div>
-
-    <!-- <label for="cars">Choose a car:</label> -->
-<!-- <select class="">
-  <option value>All</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
-</select> -->
     
 
-<!-- <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">All
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</div> -->
-
-<!-- <mat-form-field>
-  <mat-select class="custom-dropdown">
-    <mat-option>Option 1</mat-option>
-    <mat-option>Option 2</mat-option>
-    <mat-option>Option 3</mat-option>
-  </mat-select>
-</mat-form-field> -->
-
-<!-- <div> -->
-  <!-- <label for="dropdown">Select an option:</label> -->
-  <!-- <select id="dropdown" class="custom-dropdown">
-    <option>All</option>
-    <option>Option 2</option>
-    <option>Option 3</option>
-  </select> -->
-<!-- </div> -->
-<!-- <select name="All" id="" class="form-control">
-  <option value="Check glucose">Check glucose</option>
-  <option value=""></option>
-  <option value=""></option>
-  <option value=""></option>
-  <option value=""></option>
-</select> -->
-
-
-    <input class="bg-dark" type="text" placeholder="Search">
+    <div class="btn-group">
+      <button class="btn btn-dark btn-sm dropdown-toggle allbtn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+        All
+      </button>
+      
+      
+      <input class="bg-dark" type="text" placeholder="Search">
     <button class="bg-dark"><FONT COLOR="#FBFCFC"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
     </svg></FONT></button>
-  </form>
-  </div>
-
-  <!-- </div> -->
-
-  <script>
-    // add event listener to search button
-    document.getElementById("searchBtn").addEventListener("click", function() {
-      // get input value
-      const inputValue = document.querySelector(".form-control").value;
       
-      // do something with input value, e.g. search for it
-      console.log("Searching for:", inputValue);
-    });
-  </script>
+    <ul class="dropdown-menu">
+      <li *ngFor="let i of data1"><a class="dropdown-item" href="#">{{i.taskSet}}</a></li>
+    </ul>
+      
+    </div>
+
+  </form>
+</div>
+
 </nav>
 <hr style="border-top: 1px solid rgb(102, 101, 101); margin: 1rem 0;">
+
+    

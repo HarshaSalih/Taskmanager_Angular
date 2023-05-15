@@ -13,5 +13,10 @@ export class ApiService {
   {
     return this.http.get("http://localhost:8080/viewPatient/" + email);
   }
+
+  fetchtasksetdetails=()=>
+  {
+    return this.http.get("http://localhost:8080/viewTaskSet");
+  }
   
 }

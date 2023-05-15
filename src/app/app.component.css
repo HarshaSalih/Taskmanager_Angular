@@ -1,1 +1,4 @@
-/* .mat-icon{color: aliceblue;} */
+
+mat-sidenav {
+    width:60px; /* adjust as needed */
+  }
